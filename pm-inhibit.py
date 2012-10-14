@@ -1,5 +1,8 @@
 #!/usr/bin/python
 
+# Python script for inhibiting Power Managment/suspend. I did not author this. 
+# Obtained from http://trac.videolan.org/vlc/ticket/3313
+
 import dbus
 import time
 #import os

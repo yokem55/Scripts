@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# Simple wrapper script to prevent the automatic suspend to ram 
+# from kicking in while cave is compliling packages.
+
 pm-inhibit.py cave compiling &
 inhibitpid=$!
 sudo cave $@; 
