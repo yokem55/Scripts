@@ -1,0 +1,6 @@
+#!/bin/bash
+pm-inhibit.py cave compiling &
+inhibitpid=$!
+sudo cave $@; 
+/bin/kill $inhibitpid
+
